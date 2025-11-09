@@ -26,6 +26,8 @@ import { Dialog, DialogContent, DialogTitle, DialogDescription } from '@/compone
 import { Button } from '@/components/ui/button';
 import envelopeImage from '@assets/7a7e36e2-b156-4b15-b8cb-2b8c6516d9fc-removebg-preview_1762573270050.png';
 
+import gardss_removebg_preview from "@assets/gardss-removebg-preview.png";
+
 const Index = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [animationsEnabled, setAnimationsEnabled] = useState(false);
@@ -87,7 +89,7 @@ const Index = () => {
                 className="w-full max-w-md"
               >
                 <img
-                  src={envelopeImage}
+                  src={gardss_removebg_preview}
                   alt="Wedding Invitation Envelope"
                   className="w-full h-auto drop-shadow-2xl"
                   data-testid="img-envelope"
@@ -111,7 +113,6 @@ const Index = () => {
           </div>
         </DialogContent>
       </Dialog>
-
       {/* Background Music - Always present */}
       <audio
         ref={audioRef}
@@ -127,7 +128,6 @@ const Index = () => {
         />
         Your browser does not support the audio element.
       </audio>
-
       <div className="min-h-screen relative">
         <Navigation />
 
