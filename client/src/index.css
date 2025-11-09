@@ -1,0 +1,723 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Modern Elegant Design System - White & Dark Gray */
+
+@layer base {
+  :root {
+    /* Wedding Color Scheme: Shining Gold & Dusty Rose */
+    
+    /* 70% PRIMARY - Gold & Dusty Rose Background */
+    --background: 43 45% 92%; /* Soft gold background */
+    --foreground: 43 70% 35%; /* Rich gold text */
+
+    /* Card Colors - Primary Palette */
+    --card: 0 34% 88%; /* Dusty rose cards */
+    --card-foreground: 43 62% 45%; /* Gold text on cards */
+
+    /* Popover Colors - Primary Palette */
+    --popover: 43 50% 95%; /* Light gold popover */
+    --popover-foreground: 43 62% 40%; /* Gold text */
+
+    /* Brand Color - Gold */
+    --brand: 43 62% 53%; /* Gold - Main brand color */
+    --burgundy: 43 62% 53%; /* Gold for headers (was burgundy) */
+    
+    /* 20% SECONDARY - Gold (Supporting) */
+    --primary: 43 62% 53%; /* Gold primary */
+    --primary-foreground: 0 0% 100%; /* White text on gold */
+
+    /* Secondary Colors - Supporting Palette */
+    --secondary: 43 55% 60%; /* Lighter gold secondary */
+    --secondary-foreground: 0 0% 100%; /* White text on gold */
+
+    /* Muted Colors - Supporting Palette */
+    --muted: 0 34% 85%; /* Light dusty rose muted */
+    --muted-foreground: 43 40% 40%; /* Gold text */
+
+    /* 10% ACCENT - Bright Gold Accent (Standout Elements & Icons) */
+    --accent: 43 70% 60%; /* Bright gold accent */
+    --accent-foreground: 0 0% 20%; /* Dark text on gold */
+
+    /* Gold - for icons and highlights */
+    --gold: 43 62% 53%; /* #D4AF37 Gold for icons */
+    --gold-foreground: 0 0% 20%; /* Dark text on gold */
+    
+    /* Bright Gold - for emphasis */
+    --gold-bright: 43 75% 65%; /* Brighter shimmering gold */
+
+    /* Dusty Rose - for shadows and subtle accents */
+    --dusty-rose: 0 34% 82%; /* #D8B5B5 Dusty rose */
+    --dusty-rose-dark: 0 34% 70%; /* Darker dusty rose */
+    
+    /* Natural Earth Palette - keeping for compatibility */
+    --rose-gold: 0 34% 82%; /* Dusty rose */
+    --rose-gold-dark: 0 34% 70%; /* Darker dusty rose */
+    --amber-glow: 43 70% 60%; /* Bright gold */
+    --warm-light: 43 50% 90%; /* Warm gold light */
+
+    /* Natural Accents Palette - Organic colors */
+    --city-blue: 43 40% 70%; /* Gold accent */
+    --city-cyan: 43 35% 65%; /* Gold accent */
+    --city-amber: 43 70% 60%; /* Bright gold */
+    --city-purple: 0 25% 65%; /* Dusty rose accent */
+
+    /* Destructive */
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders & Inputs - No borders, use shadows */
+    --border: 43 30% 80%; /* Light gold border */
+    --input: 43 40% 90%; /* Light gold input */
+    --ring: 43 70% 60%; /* Bright gold accent ring */
+
+    /* Border Radius */
+    --radius: 0.75rem;
+
+    /* Shining Gold & Dusty Rose Gradients */
+    --gradient-elegant: linear-gradient(135deg, hsl(43, 50%, 95%), hsl(0, 34%, 88%));
+    --gradient-gold: linear-gradient(135deg, hsl(43, 62%, 53%), hsl(43, 70%, 65%));
+    --gradient-night: linear-gradient(180deg, hsl(43, 45%, 92%) 0%, hsl(0, 34%, 85%) 100%);
+    --gradient-bokeh: radial-gradient(ellipse at center, hsl(43, 70%, 60%) 0%, transparent 60%);
+
+    /* Gold & Dusty Rose Shadows */
+    --shadow-elegant: 0 20px 50px -10px rgba(212, 175, 55, 0.5);
+    --shadow-soft: 0 10px 30px -5px rgba(212, 175, 55, 0.4);
+    --shadow-warm: 0 15px 40px -8px rgba(216, 181, 181, 0.45);
+    --shadow-glow: 0 0 30px rgba(212, 175, 55, 0.6);
+
+    /* Elegant Typography Scale */
+    --font-display: 'Boska', 'Cormorant Garamond', serif; /* Headers - Boska 700 */
+    --font-script: 'Boska', 'Cormorant Garamond', serif; /* Sub-headers - Boska 500 */
+    --font-times: 'Times New Roman', Times, serif;
+    --font-body: 'Satoshi', 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; /* Body text */
+
+    /* Smooth Transitions */
+    --transition-elegant: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 0 0% 20%;
+    --sidebar-primary: 0 0% 20%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 25%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 90%;
+    --sidebar-ring: 0 0% 20%;
+  }
+
+  /* Custom Wedding Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes underlineGold {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes parallaxFloat {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes goldGlow {
+    0%, 100% {
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+    }
+    50% {
+      box-shadow: 0 0 40px rgba(212, 175, 55, 0.6);
+    }
+  }
+
+  @keyframes bokehFloat {
+    0%, 100% {
+      transform: translate(0, 0) scale(1);
+      opacity: 0.6;
+    }
+    50% {
+      transform: translate(10px, -10px) scale(1.1);
+      opacity: 0.8;
+    }
+  }
+
+  @keyframes fallGlitter {
+    0% {
+      transform: translateY(-100vh) rotate(0deg);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+
+  .glitter-particle {
+    position: absolute;
+    top: -10px;
+    background: linear-gradient(45deg, #FFD700, #FFA500);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+    animation: fallGlitter linear infinite;
+    pointer-events: none;
+  }
+
+  .glitter-particle::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.6) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+}
+
+/* Responsive clip-path variables for story images */
+@media (min-width: 768px) {
+  :root {
+    --clip-path-1: url(#clipPath-1);
+    --clip-path-2: url(#clipPath-2);
+    --clip-path-3: url(#clipPath-3);
+    --clip-path-4: url(#clipPath-4);
+    --clip-path-5: url(#clipPath-5);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    outline: none !important;
+  }
+
+  html {
+    @apply bg-background;
+  }
+
+  body {
+    @apply text-foreground font-body;
+    font-family: var(--font-body);
+    background: linear-gradient(135deg, 
+      hsl(45, 70%, 75%) 0%, 
+      hsl(43, 65%, 78%) 20%, 
+      hsl(0, 35%, 82%) 40%, 
+      hsl(45, 68%, 76%) 60%, 
+      hsl(0, 30%, 84%) 80%, 
+      hsl(45, 70%, 77%) 100%);
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      radial-gradient(circle 800px at 20% 30%, rgba(212, 175, 55, 0.3) 0%, transparent 50%),
+      radial-gradient(circle 600px at 80% 70%, rgba(216, 181, 181, 0.25) 0%, transparent 50%),
+      radial-gradient(circle 1000px at 50% 50%, rgba(212, 175, 55, 0.2) 0%, transparent 60%);
+    z-index: 0;
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      radial-gradient(circle 4px at 10% 20%, rgba(255, 215, 0, 1) 0%, rgba(255, 215, 0, 0.3) 50%, transparent 100%),
+      radial-gradient(circle 3px at 15% 45%, rgba(255, 223, 0, 1) 0%, rgba(255, 223, 0, 0.2) 50%, transparent 100%),
+      radial-gradient(circle 5px at 25% 70%, rgba(255, 215, 0, 1) 0%, rgba(255, 215, 0, 0.4) 50%, transparent 100%),
+      radial-gradient(circle 3px at 35% 15%, rgba(255, 223, 0, 0.9) 0%, rgba(255, 223, 0, 0.2) 50%, transparent 100%),
+      radial-gradient(circle 4px at 45% 85%, rgba(255, 215, 0, 1) 0%, rgba(255, 215, 0, 0.3) 50%, transparent 100%),
+      radial-gradient(circle 3px at 55% 30%, rgba(255, 223, 0, 1) 0%, rgba(255, 223, 0, 0.2) 50%, transparent 100%),
+      radial-gradient(circle 4px at 65% 60%, rgba(255, 215, 0, 1) 0%, rgba(255, 215, 0, 0.3) 50%, transparent 100%),
+      radial-gradient(circle 3px at 75% 10%, rgba(255, 223, 0, 0.9) 0%, rgba(255, 223, 0, 0.2) 50%, transparent 100%),
+      radial-gradient(circle 5px at 85% 80%, rgba(255, 215, 0, 1) 0%, rgba(255, 215, 0, 0.4) 50%, transparent 100%),
+      radial-gradient(circle 3px at 90% 40%, rgba(255, 223, 0, 1) 0%, rgba(255, 223, 0, 0.2) 50%, transparent 100%),
+      radial-gradient(circle 4px at 12% 55%, rgba(255, 215, 0, 1) 0%, rgba(255, 215, 0, 0.3) 50%, transparent 100%),
+      radial-gradient(circle 3px at 22% 90%, rgba(255, 223, 0, 0.9) 0%, rgba(255, 223, 0, 0.2) 50%, transparent 100%),
+      radial-gradient(circle 4px at 32% 25%, rgba(255, 215, 0, 1) 0%, rgba(255, 215, 0, 0.3) 50%, transparent 100%),
+      radial-gradient(circle 3px at 42% 65%, rgba(255, 223, 0, 1) 0%, rgba(255, 223, 0, 0.2) 50%, transparent 100%),
+      radial-gradient(circle 5px at 52% 5%, rgba(255, 215, 0, 1) 0%, rgba(255, 215, 0, 0.4) 50%, transparent 100%),
+      radial-gradient(circle 3px at 62% 75%, rgba(255, 223, 0, 0.9) 0%, rgba(255, 223, 0, 0.2) 50%, transparent 100%),
+      radial-gradient(circle 4px at 72% 35%, rgba(255, 215, 0, 1) 0%, rgba(255, 215, 0, 0.3) 50%, transparent 100%),
+      radial-gradient(circle 3px at 82% 95%, rgba(255, 223, 0, 1) 0%, rgba(255, 223, 0, 0.2) 50%, transparent 100%),
+      radial-gradient(circle 4px at 92% 50%, rgba(255, 215, 0, 1) 0%, rgba(255, 215, 0, 0.3) 50%, transparent 100%),
+      radial-gradient(circle 3px at 8% 8%, rgba(255, 223, 0, 0.9) 0%, rgba(255, 223, 0, 0.2) 50%, transparent 100%),
+      radial-gradient(circle 4px at 5% 35%, rgba(255, 215, 0, 1) 0%, rgba(255, 215, 0, 0.3) 50%, transparent 100%),
+      radial-gradient(circle 3px at 18% 5%, rgba(255, 223, 0, 1) 0%, rgba(255, 223, 0, 0.2) 50%, transparent 100%),
+      radial-gradient(circle 4px at 30% 95%, rgba(255, 215, 0, 1) 0%, rgba(255, 215, 0, 0.3) 50%, transparent 100%),
+      radial-gradient(circle 3px at 40% 50%, rgba(255, 223, 0, 0.9) 0%, rgba(255, 223, 0, 0.2) 50%, transparent 100%),
+      radial-gradient(circle 5px at 50% 40%, rgba(255, 215, 0, 1) 0%, rgba(255, 215, 0, 0.4) 50%, transparent 100%),
+      radial-gradient(circle 3px at 60% 15%, rgba(255, 223, 0, 1) 0%, rgba(255, 223, 0, 0.2) 50%, transparent 100%),
+      radial-gradient(circle 4px at 70% 85%, rgba(255, 215, 0, 1) 0%, rgba(255, 215, 0, 0.3) 50%, transparent 100%),
+      radial-gradient(circle 3px at 80% 55%, rgba(255, 223, 0, 0.9) 0%, rgba(255, 223, 0, 0.2) 50%, transparent 100%),
+      radial-gradient(circle 4px at 88% 25%, rgba(255, 215, 0, 1) 0%, rgba(255, 215, 0, 0.3) 50%, transparent 100%),
+      radial-gradient(circle 3px at 95% 65%, rgba(255, 223, 0, 1) 0%, rgba(255, 223, 0, 0.2) 50%, transparent 100%),
+      radial-gradient(circle 4px at 3% 78%, rgba(255, 215, 0, 1) 0%, rgba(255, 215, 0, 0.3) 50%, transparent 100%),
+      radial-gradient(circle 3px at 13% 33%, rgba(255, 223, 0, 0.9) 0%, rgba(255, 223, 0, 0.2) 50%, transparent 100%),
+      radial-gradient(circle 5px at 27% 48%, rgba(255, 215, 0, 1) 0%, rgba(255, 215, 0, 0.4) 50%, transparent 100%),
+      radial-gradient(circle 3px at 37% 82%, rgba(255, 223, 0, 1) 0%, rgba(255, 223, 0, 0.2) 50%, transparent 100%),
+      radial-gradient(circle 4px at 47% 12%, rgba(255, 215, 0, 1) 0%, rgba(255, 215, 0, 0.3) 50%, transparent 100%),
+      radial-gradient(circle 3px at 57% 68%, rgba(255, 223, 0, 0.9) 0%, rgba(255, 223, 0, 0.2) 50%, transparent 100%),
+      radial-gradient(circle 4px at 67% 42%, rgba(255, 215, 0, 1) 0%, rgba(255, 215, 0, 0.3) 50%, transparent 100%),
+      radial-gradient(circle 3px at 77% 92%, rgba(255, 223, 0, 1) 0%, rgba(255, 223, 0, 0.2) 50%, transparent 100%),
+      radial-gradient(circle 4px at 87% 8%, rgba(255, 215, 0, 1) 0%, rgba(255, 215, 0, 0.3) 50%, transparent 100%),
+      radial-gradient(circle 3px at 97% 38%, rgba(255, 223, 0, 0.9) 0%, rgba(255, 223, 0, 0.2) 50%, transparent 100%),
+      radial-gradient(circle 5px at 6% 52%, rgba(216, 181, 181, 0.9) 0%, rgba(216, 181, 181, 0.3) 50%, transparent 100%),
+      radial-gradient(circle 4px at 18% 78%, rgba(216, 181, 181, 0.8) 0%, rgba(216, 181, 181, 0.2) 50%, transparent 100%),
+      radial-gradient(circle 4px at 28% 38%, rgba(216, 181, 181, 0.8) 0%, rgba(216, 181, 181, 0.2) 50%, transparent 100%),
+      radial-gradient(circle 5px at 38% 88%, rgba(216, 181, 181, 0.9) 0%, rgba(216, 181, 181, 0.3) 50%, transparent 100%),
+      radial-gradient(circle 4px at 48% 18%, rgba(216, 181, 181, 0.7) 0%, rgba(216, 181, 181, 0.2) 50%, transparent 100%),
+      radial-gradient(circle 4px at 58% 58%, rgba(216, 181, 181, 0.8) 0%, rgba(216, 181, 181, 0.2) 50%, transparent 100%),
+      radial-gradient(circle 4px at 68% 28%, rgba(216, 181, 181, 0.8) 0%, rgba(216, 181, 181, 0.2) 50%, transparent 100%),
+      radial-gradient(circle 5px at 78% 68%, rgba(216, 181, 181, 0.9) 0%, rgba(216, 181, 181, 0.3) 50%, transparent 100%),
+      radial-gradient(circle 4px at 88% 48%, rgba(216, 181, 181, 0.7) 0%, rgba(216, 181, 181, 0.2) 50%, transparent 100%),
+      radial-gradient(circle 4px at 96% 82%, rgba(216, 181, 181, 0.8) 0%, rgba(216, 181, 181, 0.2) 50%, transparent 100%);
+    z-index: 0;
+    pointer-events: none;
+    animation: sparkle 2.5s ease-in-out infinite;
+  }
+
+  @keyframes sparkle {
+    0%, 100% {
+      opacity: 0.8;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+
+
+  .font-display {
+    font-family: var(--font-display);
+    font-weight: 700;
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  .font-script {
+    font-family: var(--font-script);
+    font-weight: 500;
+  }
+
+  .font-times {
+    font-family: var(--font-times);
+  }
+
+  /* Mobile-First Responsive Typography */
+  .text-hero {
+    @apply text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-display font-light tracking-tight;
+    line-height: 0.9;
+    letter-spacing: 0.15em;
+  }
+
+  .text-hero-script {
+    @apply text-3xl sm:text-4xl lg:text-5xl font-script font-normal italic;
+    line-height: 1.2;
+  }
+
+  .text-subtitle {
+    @apply text-lg sm:text-xl lg:text-2xl font-body font-light tracking-wider;
+    letter-spacing: 0.05em;
+  }
+
+  .text-section-title {
+    @apply text-2xl sm:text-3xl lg:text-4xl font-display font-semibold tracking-tight;
+  }
+
+  .text-elegant-body {
+    @apply text-base sm:text-lg leading-relaxed font-body;
+  }
+
+  /* Animation Classes */
+  .animate-fade-up {
+    animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  .animate-fade-scale {
+    animation: fadeInScale 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  .animate-float {
+    animation: parallaxFloat 6s ease-in-out infinite;
+  }
+
+  .animate-gold-glow {
+    animation: goldGlow 3s ease-in-out infinite;
+  }
+
+  .animate-bokeh {
+    animation: bokehFloat 8s ease-in-out infinite;
+  }
+
+  /* Elegant Hover Effects */
+  .hover-elegant {
+    @apply transition-all duration-500 hover:scale-105;
+  }
+
+  .hover-glow {
+    @apply transition-all duration-500;
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+  }
+
+  .gold-underline {
+    @apply relative;
+  }
+
+  .gold-underline::after {
+    content: '';
+    @apply absolute bottom-0 left-0 h-0.5;
+    background-color: hsl(43, 70%, 50%);
+    width: 0;
+    transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .gold-underline.active::after {
+    width: 100%;
+  }
+
+  /* Overlay for background gradients */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at top left, rgba(212, 175, 55, 0.08), transparent 60%),
+                radial-gradient(circle at bottom right, rgba(216, 181, 181, 0.08), transparent 60%);
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  main {
+    position: relative;
+    z-index: 2;
+  }
+
+  #root {
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Glass Morphism Effect */
+  .glass-effect {
+    background: rgba(255, 248, 220, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+  }
+
+  /* Clean Mobile Styles */
+  @media (max-width: 768px) {
+    .hover-glow:hover {
+      box-shadow: none;
+    }
+
+    /* Enhanced Mobile Layout Improvements */
+    section {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+
+    .max-w-4xl, .max-w-3xl, .max-w-2xl {
+      max-width: 100% !important;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+
+    /* Countdown section mobile improvements */
+    .grid-cols-4 {
+      gap: 0.5rem !important;
+    }
+
+    /* Card padding adjustments */
+    .p-8 {
+      padding: 1rem !important;
+    }
+
+    .p-6 {
+      padding: 0.75rem !important;
+    }
+
+    /* Image sizing for mobile */
+    .w-64 {
+      width: 12rem !important;
+    }
+
+    .h-64 {
+      height: 12rem !important;
+    }
+
+    /* Typography adjustments */
+    .text-4xl {
+      font-size: 2rem !important;
+    }
+
+    .text-5xl {
+      font-size: 2.5rem !important;
+    }
+
+    .text-6xl {
+      font-size: 3rem !important;
+    }
+
+    /* Hero section specific mobile fixes - moved to component */
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(212, 175, 55, 0.4);
+    @apply rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(212, 175, 55, 0.6);
+  }
+
+  /* Remove any unwanted borders */
+  section {
+    border: none !important;
+    outline: none !important;
+  }
+
+  /* Restore proper border-radius for UI elements that need it */
+  .rounded-lg {
+    border-radius: 0.5rem !important;
+  }
+
+  .rounded-xl {
+    border-radius: 0.75rem !important;
+  }
+
+  .rounded-2xl {
+    border-radius: 1rem !important;
+  }
+
+  /* Accessible focus styles for night theme */
+  *:focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
+  }
+
+  /* Modern Gold Button with Shimmer Glow */
+  .shadow__btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: hsl(var(--primary-foreground));
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    background: hsl(var(--primary));
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
+  }
+
+  .shadow__btn:hover {
+    box-shadow: 0 0 5px hsl(var(--primary)),
+                0 0 25px hsl(var(--primary)),
+                0 0 50px hsl(var(--primary)),
+                0 0 100px hsl(var(--primary));
+  }
+
+  /* Image Loop Animation Styles */
+  .image-loop-section {
+    position: relative;
+  }
+
+  .image-loop-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .image-loop-track {
+    display: flex;
+    animation: imageLoop 60s linear infinite;
+    width: fit-content;
+  }
+
+  .image-loop-track-static {
+    display: flex;
+    width: fit-content;
+  }
+
+  .image-loop-item {
+    flex-shrink: 0;
+    margin-right: 2rem;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .image-loop-img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  .image-loop-item:hover .image-loop-img {
+    transform: scale(1.05);
+  }
+
+  @keyframes imageLoop {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Pause animation on hover for better UX */
+  .image-loop-track:hover {
+    animation-play-state: paused;
+  }
+
+  /* Alternating Section Backgrounds - Shining Gold & Dusty Rose Theme */
+  .section-pastel-blue {
+    background: linear-gradient(135deg, 
+      hsl(43, 60%, 90%) 0%, 
+      hsl(0, 38%, 85%) 50%, 
+      hsl(43, 55%, 88%) 100%);
+    color: hsl(43, 62%, 35%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .section-pastel-blue > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  .section-pastel-blue::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+      radial-gradient(circle, rgba(212, 175, 55, 0.2) 0%, transparent 60%);
+    z-index: 1;
+  }
+
+  .section-hard-blue {
+    background: linear-gradient(135deg, 
+      hsl(0, 38%, 83%) 0%, 
+      hsl(43, 55%, 87%) 50%, 
+      hsl(0, 35%, 86%) 100%);
+    color: hsl(43, 62%, 35%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .section-hard-blue > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  .section-hard-blue::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+      radial-gradient(circle, rgba(216, 181, 181, 0.25) 0%, transparent 60%);
+    z-index: 1;
+  }
+
+  /* Mobile responsive adjustments */
+  @media (max-width: 768px) {
+    .image-loop-item {
+      width: 250px;
+      height: 167px;
+      margin-right: 1rem;
+    }
+
+    .image-loop-track {
+      animation-duration: 45s;
+    }
+  }
+}
+
+/* Location Guide Button - Clean Text Link */
+.location-guide-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: inline;
+  color: hsl(var(--primary));
+  text-decoration: underline;
+  transition: var(--transition-smooth);
+}
+
+.location-guide-btn:hover {
+  color: hsl(var(--primary)) !important;
+  opacity: 0.8;
+}
