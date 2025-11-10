@@ -2,8 +2,9 @@ import { motion } from 'framer-motion';
 import { useAnimationContext } from '@/contexts/AnimationContext';
 import { Sparkles, Compass } from 'lucide-react';
 
+import futureImage from '@assets/prenup4_1762435311714.jpg';
+
 const promiseImage = 'https://res.cloudinary.com/dljaaf4x9/image/upload/v1762751603/Engagement_wxdd8r.png';
-const futureImage = 'https://res.cloudinary.com/dljaaf4x9/image/upload/v1762751603/Engagement_wxdd8r.png';
 
 const StorySection = () => {
   const { animationsEnabled } = useAnimationContext();
