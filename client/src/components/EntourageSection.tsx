@@ -38,6 +38,26 @@ const EntourageSection = () => {
             </div>
           </div>
 
+          {/* Principal Sponsors */}
+          <div data-testid="section-principal-sponsors">
+            <h3 className="font-display italic text-lg text-[hsl(var(--gold))] mb-4">Principal Sponsors</h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-2">
+              <p className="text-black font-normal text-xs">Ma. Gina Verzosa</p>
+              <p className="text-black font-normal text-xs">Allan Venasquez</p>
+              <p className="text-black font-normal text-xs">Julius Mulle</p>
+              <p className="text-black font-normal text-xs">Iris Mulle</p>
+              <p className="text-black font-normal text-xs">Andrew Catli</p>
+              <p className="text-black font-normal text-xs">Alma Catli</p>
+              <p className="text-black font-normal text-xs">Mark Matira</p>
+              <p className="text-black font-normal text-xs">Rosemarie Matira</p>
+              <p className="text-black font-normal text-xs">Godofredo Bayola</p>
+              <p className="text-black font-normal text-xs">Rosaline Bayola</p>
+              <p className="text-black font-normal text-xs">Julio Castillo Palazon</p>
+              <p className="text-black font-normal text-xs">Emergina Rey</p>
+              <p className="text-black font-normal text-xs">Rowena Talastas</p>
+            </div>
+          </div>
+
           {/* Secondary Sponsors - 3 COLUMNS */}
           <div>
             <h3 className="font-display italic text-lg text-[hsl(var(--gold))] mb-4" data-testid="heading-secondary-sponsors">Secondary Sponsors</h3>
