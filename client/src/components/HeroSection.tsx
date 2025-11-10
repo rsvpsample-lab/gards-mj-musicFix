@@ -2,19 +2,21 @@ import { TypeAnimation } from 'react-type-animation';
 import { useState, useEffect } from 'react';
 import { useAnimationContext } from '@/contexts/AnimationContext';
 import { ChevronDown } from 'lucide-react';
-import heroImage1 from '@assets/1 best prenup_1762572100819.jpg';
-import heroImage2 from '@assets/2 - best pic_1762572100820.jpg';
-import heroImage3 from '@assets/3_-_best_pic_1762572100820.jpg';
-import heroImage4 from '@assets/4 - best pic_1762572100821.JPG';
-import heroImage5 from '@assets/5 - best pic_1762572100822.JPG';
-import heroImage6 from '@assets/6_-_best_pic_1762572100824.jpg';
+
+const heroImage1 = 'https://res.cloudinary.com/dljaaf4x9/image/upload/v1762751604/Best_Pic_1_i32dzr.jpg';
+const heroImage2 = 'https://res.cloudinary.com/dljaaf4x9/image/upload/f_jpg/v1762751603/Best_Pic_2_eg3s9l.heic';
+const heroImage3 = 'https://res.cloudinary.com/dljaaf4x9/image/upload/f_jpg/v1762751603/Best_Pic_3_zobgov.heic';
+const heroImage4 = 'https://res.cloudinary.com/dljaaf4x9/image/upload/v1762751603/Best_Pic_4_gmupym.jpg';
+const heroImage5 = 'https://res.cloudinary.com/dljaaf4x9/image/upload/f_jpg/v1762751602/Best_Pic_5_ak2bhz.heic';
+const heroImage6 = 'https://res.cloudinary.com/dljaaf4x9/image/upload/f_jpg/v1762751602/Best_Pic_6_sluav0.heic';
+const heroImage7 = 'https://res.cloudinary.com/dljaaf4x9/image/upload/v1762751601/Best_Pic_7_v78kb7.jpg';
 
 const HeroSection = () => {
   const [showElements, setShowElements] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const { animationsEnabled } = useAnimationContext();
 
-  const heroImages = [heroImage1, heroImage2, heroImage3, heroImage4, heroImage5, heroImage6];
+  const heroImages = [heroImage1, heroImage2, heroImage3, heroImage4, heroImage5, heroImage6, heroImage7];
 
   useEffect(() => {
     const interval = setInterval(() => {
