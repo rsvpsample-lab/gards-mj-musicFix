@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
 import { useLocation } from 'wouter';
-import envelopeImage from '@assets/7a7e36e2-b156-4b15-b8cb-2b8c6516d9fc-removebg-preview_1762573270050.png';
 import { Button } from '@/components/ui/button';
+
+const envelopeImage = 'https://res.cloudinary.com/dljaaf4x9/image/upload/v1762751154/4b5765ed-7c90-4d39-a5cf-44acfa8f7366.png';
 
 const LandingPage = () => {
   const [, setLocation] = useLocation();
