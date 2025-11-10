@@ -94,7 +94,7 @@ const StorySection = () => {
                   <img
                     src={card.image}
                     alt={`${card.title} moment`}
-                    className="w-full h-full object-cover rounded-2xl shadow-lg"
+                    className="w-full h-full object-contain rounded-2xl shadow-lg"
                     data-testid={`img-story-card-${card.id}`}
                   />
 

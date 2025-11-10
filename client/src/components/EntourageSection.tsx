@@ -38,44 +38,61 @@ const EntourageSection = () => {
             </div>
           </div>
 
-          {/* Principal Sponsors */}
+          {/* Principal Sponsors - 2 COLUMNS (Men Left, Women Right) */}
           <div data-testid="section-principal-sponsors">
             <h3 className="font-display italic text-lg text-[hsl(var(--gold))] mb-4">Principal Sponsors</h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-2">
-              <p className="text-black font-normal text-xs">Ma. Gina Verzosa</p>
-              <p className="text-black font-normal text-xs">Allan Venasquez</p>
-              <p className="text-black font-normal text-xs">Julius Mulle</p>
-              <p className="text-black font-normal text-xs">Iris Mulle</p>
-              <p className="text-black font-normal text-xs">Andrew Catli</p>
-              <p className="text-black font-normal text-xs">Alma Catli</p>
-              <p className="text-black font-normal text-xs">Mark Matira</p>
-              <p className="text-black font-normal text-xs">Rosemarie Matira</p>
-              <p className="text-black font-normal text-xs">Godofredo Bayola</p>
-              <p className="text-black font-normal text-xs">Rosaline Bayola</p>
-              <p className="text-black font-normal text-xs">Julio Castillo Palazon</p>
-              <p className="text-black font-normal text-xs">Emergina Rey</p>
-              <p className="text-black font-normal text-xs">Rowena Talastas</p>
+            <div className="grid grid-cols-2 gap-x-8">
+              <div>
+                <p className="text-black font-normal text-xs">Allan Venasquez</p>
+                <p className="text-black font-normal text-xs">Julius Mulle</p>
+                <p className="text-black font-normal text-xs">Andrew Catli</p>
+                <p className="text-black font-normal text-xs">Mark Matira</p>
+                <p className="text-black font-normal text-xs">Godofredo Bayola</p>
+                <p className="text-black font-normal text-xs">Julio Castillo Palazon</p>
+              </div>
+              <div>
+                <p className="text-black font-normal text-xs">Ma. Gina Verzosa</p>
+                <p className="text-black font-normal text-xs">Iris Mulle</p>
+                <p className="text-black font-normal text-xs">Alma Catli</p>
+                <p className="text-black font-normal text-xs">Rosemarie Matira</p>
+                <p className="text-black font-normal text-xs">Rosaline Bayola</p>
+                <p className="text-black font-normal text-xs">Emergina Rey</p>
+                <p className="text-black font-normal text-xs">Rowena Talastas</p>
+              </div>
             </div>
           </div>
 
-          {/* Secondary Sponsors - 3 COLUMNS */}
+          {/* Secondary Sponsors - 2 COLUMNS (Men Left, Women Right) */}
           <div>
             <h3 className="font-display italic text-lg text-[hsl(var(--gold))] mb-4" data-testid="heading-secondary-sponsors">Secondary Sponsors</h3>
-            <div className="grid grid-cols-3 gap-6">
-              <div data-testid="section-candle">
-                <h4 className="font-bold italic text-xs text-[hsl(var(--gold))] mb-1">Candle</h4>
-                <p className="text-black font-normal text-xs">John Carlo Verzosa</p>
-                <p className="text-black font-normal text-xs">Maria Trisha Venasquez</p>
+            <div className="grid grid-cols-2 gap-x-8">
+              <div className="space-y-3">
+                <div data-testid="section-candle-man">
+                  <h4 className="font-bold italic text-xs text-[hsl(var(--gold))] mb-1">Candle</h4>
+                  <p className="text-black font-normal text-xs">John Carlo Verzosa</p>
+                </div>
+                <div data-testid="section-veil-man">
+                  <h4 className="font-bold italic text-xs text-[hsl(var(--gold))] mb-1">Veil</h4>
+                  <p className="text-black font-normal text-xs">Mark Manuel Bacay</p>
+                </div>
+                <div data-testid="section-cord-man">
+                  <h4 className="font-bold italic text-xs text-[hsl(var(--gold))] mb-1">Cord</h4>
+                  <p className="text-black font-normal text-xs">Jonathan Deomampo</p>
+                </div>
               </div>
-              <div data-testid="section-veil">
-                <h4 className="font-bold italic text-xs text-[hsl(var(--gold))] mb-1">Veil</h4>
-                <p className="text-black font-normal text-xs">Mark Manuel Bacay</p>
-                <p className="text-black font-normal text-xs">Jemima Lois Rey</p>
-              </div>
-              <div data-testid="section-cord">
-                <h4 className="font-bold italic text-xs text-[hsl(var(--gold))] mb-1">Cord</h4>
-                <p className="text-black font-normal text-xs">Jonathan Deomampo</p>
-                <p className="text-black font-normal text-xs">Mary Grace Bayola</p>
+              <div className="space-y-3">
+                <div data-testid="section-candle-woman">
+                  <h4 className="font-bold italic text-xs text-[hsl(var(--gold))] mb-1">Candle</h4>
+                  <p className="text-black font-normal text-xs">Maria Trisha Venasquez</p>
+                </div>
+                <div data-testid="section-veil-woman">
+                  <h4 className="font-bold italic text-xs text-[hsl(var(--gold))] mb-1">Veil</h4>
+                  <p className="text-black font-normal text-xs">Jemima Lois Rey</p>
+                </div>
+                <div data-testid="section-cord-woman">
+                  <h4 className="font-bold italic text-xs text-[hsl(var(--gold))] mb-1">Cord</h4>
+                  <p className="text-black font-normal text-xs">Mary Grace Bayola</p>
+                </div>
               </div>
             </div>
           </div>
