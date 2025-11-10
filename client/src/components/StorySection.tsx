@@ -149,10 +149,10 @@ const StorySection = () => {
               
               <div className="max-w-2xl mx-auto">
                 <p className="text-xl sm:text-2xl leading-relaxed italic mb-4 text-[hsl(var(--burgundy))]/85">
-                  "Above all, clothe yourselves with love, which binds us all together in perfect harmony."
+                  "Love bears all things, believes all things, hopes all things, endures all things."
                 </p>
                 <p className="text-base sm:text-lg font-body text-[hsl(var(--burgundy))]/75">
-                  Colossians 3:14
+                  1 Corinthians 13:7
                 </p>
               </div>
               
