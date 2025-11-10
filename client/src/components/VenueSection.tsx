@@ -17,8 +17,8 @@ const VenueSection = () => {
       mapUrl: 'https://maps.app.goo.gl/ruE7cH3gRXfXUsMk9',
       mapEmbed: 'https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Caleruega+Nasugbu+Batangas&zoom=15',
       description: 'Join us at the beautiful Caleruega for our wedding ceremony. This serene venue will witness our vows of eternal love as we begin our journey together.',
-      details: 'The ceremony begins promptly at 9:30 AM. Please arrive by 8:30 AM to be seated.',
-      startTime: '9:30 AM'
+      details: 'The ceremony begins promptly at 8:30 AM. Please arrive by 7:30 AM to be seated.',
+      startTime: '8:30 AM'
     },
     {
       title: 'Wedding Reception',
