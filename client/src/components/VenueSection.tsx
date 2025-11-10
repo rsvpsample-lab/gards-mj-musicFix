@@ -17,8 +17,8 @@ const VenueSection = () => {
       mapUrl: 'https://maps.app.goo.gl/ruE7cH3gRXfXUsMk9',
       mapEmbed: 'https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Caleruega+Nasugbu+Batangas&zoom=15',
       description: 'Join us at the beautiful Caleruega for our wedding ceremony. This serene venue will witness our vows of eternal love as we begin our journey together.',
-      details: 'The ceremony begins promptly at 3:00 PM. Please arrive early to be seated.',
-      startTime: '3:00 PM'
+      details: 'The ceremony begins promptly at 9:30 AM. Please arrive by 8:30 AM to be seated.',
+      startTime: '9:30 AM'
     },
     {
       title: 'Wedding Reception',
@@ -28,7 +28,7 @@ const VenueSection = () => {
       mapUrl: 'https://www.google.com/maps/search/?api=1&query=Villa+Ibarra+Tagaytay',
       mapEmbed: 'https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Villa+Ibarra+Tagaytay&zoom=15',
       description: 'Continue the celebration with us at Villa Ibarra in Tagaytay. This elegant venue will host our reception where we will celebrate with lunch, dancing, and joy.',
-      details: 'The reception will follow immediately after the ceremony. Lunch and dancing to follow.',
+      details: 'The reception will follow after the ceremony. Lunch and dancing to follow.',
       startTime: '12:30 PM'
     }
   ];
