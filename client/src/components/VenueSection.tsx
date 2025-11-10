@@ -27,9 +27,9 @@ const VenueSection = () => {
       image: receptionImage,
       mapUrl: 'https://www.google.com/maps/search/?api=1&query=Villa+Ibarra+Tagaytay',
       mapEmbed: 'https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Villa+Ibarra+Tagaytay&zoom=15',
-      description: 'Continue the celebration with us at Villa Ibarra in Tagaytay. This elegant venue will host our reception where we will celebrate with dinner, dancing, and joy.',
-      details: 'The reception will follow immediately after the ceremony. Dinner and dancing to follow.',
-      startTime: '5:00 PM'
+      description: 'Continue the celebration with us at Villa Ibarra in Tagaytay. This elegant venue will host our reception where we will celebrate with lunch, dancing, and joy.',
+      details: 'The reception will follow immediately after the ceremony. Lunch and dancing to follow.',
+      startTime: '12:30 PM'
     }
   ];
 

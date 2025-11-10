@@ -25,8 +25,8 @@ const TimelineCard: React.FC<TimelineCardProps> = ({ timelineEvent, i }) => {
             "Guest Arrival": "We highly encourage you to arrive an hour before the ceremony starts. Please be seated by 8:30 AM.",
             "Wedding Ceremony": "Witness our vows and the beginning of our journey together as we exchange rings and promises at the Parish of the Holy Family.",
             "Photo Session": "Capture beautiful moments with the newlyweds and wedding party. Professional photography session for cherished memories.",
-            "Cocktail Hour": "Relax and mingle with other guests while enjoying refreshing drinks and light appetizers.",
-            "Reception": "Join us at Casa Dominguez for lunch, heartfelt toasts, and dancing as we celebrate our union together."
+            "Cocktail Hr": "Relax and mingle with other guests while enjoying refreshing drinks and light appetizers.",
+            "Reception": "Join us at Villa Ibarra for lunch, heartfelt toasts, and dancing as we celebrate our union together."
         };
         return descriptions[eventName] || "Join us for this special moment in our lives.";
     };
@@ -138,21 +138,21 @@ const timelineEvents: TimelineEvent[] = [
         hueB: 40,
     },
     {
-        time: "9:30 AM",
+        time: "10:00 AM",
         event: "Photo Session", 
         icon: Camera,
         hueA: 40,
         hueB: 40,
     },
     {
-        time: "10:30 AM",
-        event: "Cocktail Hour",
+        time: "11:30 AM",
+        event: "Cocktail Hr",
         icon: Wine,
         hueA: 40,
         hueB: 40,
     },
     {
-        time: "12:00 PM",
+        time: "12:30 PM",
         event: "Reception",
         icon: PartyPopper,
         hueA: 40,
