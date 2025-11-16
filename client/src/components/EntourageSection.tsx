@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 
+import Red_Yellow_and_Green_Watercolor_Floral_Tropical_Filipino_Wedding_Entourage_Virtual_Invitation from "@assets/Red Yellow and Green Watercolor Floral Tropical Filipino Wedding Entourage Virtual Invitation.png";
+
 const EntourageSection = () => {
   return (
     <motion.section 
@@ -28,7 +30,7 @@ const EntourageSection = () => {
           transition={{ duration: 0.8, ease: "easeOut", delay: 8.8 }}
         >
           <img 
-            src="https://res.cloudinary.com/dljaaf4x9/image/upload/v1762755529/Red_Yellow_and_Green_Watercolor_Floral_Tropical_Filipino_Wedding_Entourage_Virtual_Invitation_1_ppcmex.jpg"
+            src={Red_Yellow_and_Green_Watercolor_Floral_Tropical_Filipino_Wedding_Entourage_Virtual_Invitation}
             alt="Wedding Entourage"
             className="w-full h-auto block rounded-lg shadow-lg"
           />
