@@ -44,7 +44,7 @@ const RSVPSection = () => {
                 <Calendar className="w-8 h-8 text-[hsl(var(--gold))]" />
               </div>
               <h3 className="text-xl font-display font-semibold mb-2 text-[hsl(var(--burgundy))]">RSVP Deadline</h3>
-              <p className="text-lg text-[hsl(var(--burgundy))]/70">November 20, 2025</p>
+              <p className="text-lg text-[hsl(var(--burgundy))]/70">November 28, 2025</p>
             </div>
 
             {/* RSVP Message */}
